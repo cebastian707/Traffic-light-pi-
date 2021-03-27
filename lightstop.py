@@ -1,4 +1,5 @@
 #PROGRAM DONE BY CEBASTIAN SANTIAGO
+#simple traffic light sequence with a buzzer when the night turns red
 from time import sleep
 from gpiozero import Button ,TrafficLights,Buzzer
 
@@ -16,5 +17,7 @@ while True:
         sleep(5)
         lights.amber.off()
         lights.red.on()
+        buzzer.on()
         sleep(5)
         lights.red.off()
+        buzzer.off()
