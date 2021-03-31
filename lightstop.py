@@ -1,5 +1,5 @@
 #PROGRAM DONE BY CEBASTIAN SANTIAGO
-#simple traffic light sequence with a buzzer when the night turns red  using the raspberry pi Gpio pins 
+#simple traffic light sequence with a buzzer and green light red and yellow light using the raspberry pi Gpio pins 
 from time import sleep
 from gpiozero import Button ,TrafficLights,Buzzer
 
